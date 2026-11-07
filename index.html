@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pallavi | Student Portfolio</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.7;
+        }
+
+        :root {
+            --primary: #8b5cf6;
+            --secondary: #22d3ee;
+            --card: #151f32;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 8%;
+            background: #101a2c;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid #26344c;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            color: var(--secondary);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: var(--secondary);
+        }
+
+        section {
+            padding: 85px 10%;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            background:
+                radial-gradient(circle at 85% 30%, #30205a 0%, transparent 35%);
+        }
+
+        .hero h1 {
+            font-size: clamp(38px, 6vw, 65px);
+            line-height: 1.2;
+            margin: 20px 0;
+        }
+
+        .hero h1 span {
+            color: var(--secondary);
+        }
+
+        .hero h3 {
+            color: #a78bfa;
+            font-size: 23px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #aab6c8;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            margin: 8px 8px 8px 0;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: #6d28d9;
+            transform: translateY(-3px);
+        }
+
+        .outline {
+            background: transparent;
+            border: 1px solid var(--secondary);
+            color: var(--secondary);
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
+        .heading h2 {
+            font-size: 35px;
+            color: var(--secondary);
+        }
+
+        .heading p {
+            color: #94a3b8;
+        }
+
+        .about-text {
+            max-width: 850px;
+            margin: auto;
+            text-align: center;
+            color: #b9c5d6;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 28px;
+            border-radius: 14px;
+            border: 1px solid #26344c;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-7px);
+            border-color: var(--primary);
+        }
+
+        .card h3 {
+            color: var(--secondary);
+            margin-bottom: 12px;
+        }
+
+        .card p {
+            color: #aab6c8;
+            font-size: 14px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #292449;
+            color: #c4b5fd;
+            padding: 6px 12px;
+            margin: 5px;
+            border-radius: 20px;
+            font-size: 12px;
+        }
+
+        .timeline {
+            max-width: 750px;
+            margin: auto;
+        }
+
+        .timeline .card {
+            margin-bottom: 20px;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #aab6c8;
+            margin: 12px 0;
+        }
+
+        footer {
+            background: #101a2c;
+            text-align: center;
+            padding: 25px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media(max-width: 750px) {
+            nav {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 5px;
+                font-size: 12px;
+            }
+
+            section {
+                padding: 65px 7%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<nav>
+    <div class="logo">PALLAVI.</div>
+    <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<!-- HOME -->
+<section class="hero" id="home">
+    <h3>Hello, Welcome to My Portfolio!</h3>
+
+    <h1>I'm <span>Pallavi</span><br>
+    A Data Science Student</h1>
+
+    <p>
+        BSc Data Science and Mathematics student passionate about
+        technology, programming, data analysis and discovering
+        meaningful insights from data.
+    </p>
+
+    <div>
+        <a href="#projects" class="btn">Explore My Projects</a>
+        <a href="#contact" class="btn outline">Contact Me</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="heading">
+        <h2>About Me</h2>
+        <p>Get to know me and my journey.</p>
+    </div>
+
+    <div class="about-text">
+        <p>
+            I am currently pursuing my second year of Bachelor of Science
+            in Data Science and Mathematics at Christ University.
+
+            I enjoy learning how technology works, solving problems
+            and exploring the world of data.
+
+            My academic journey has helped me develop an interest in
+            Python programming, statistics, data visualization and
+            machine learning.
+
+            I believe in continuous learning and improving my skills
+            through practical projects and real-world experiences.
+
+            My goal is to become a skilled Data Analyst and eventually
+            explore advanced opportunities in Data Science.
+        </p>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <div class="heading">
+        <h2>My Education</h2>
+        <p>My academic background.</p>
+    </div>
+
+    <div class="timeline">
+        <div class="card">
+            <h3>BSc Data Science and Mathematics</h3>
+            <p><strong>Christ University</strong></p>
+            <p>Currently pursuing Second Year</p>
+            <p>Areas of study include Mathematics, Statistics,
+            Database Management Systems, Programming and Data Science.</p>
+        </div>
+
+        <div class="card">
+            <h3>Higher Secondary Education</h3>
+            <p>Completed Class 12 with 85%+ marks.</p>
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="heading">
+        <h2>Technical Skills</h2>
+        <p>Technologies and tools I am learning and practising.</p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Programming</h3>
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+        </div>
+
+        <div class="card">
+            <h3>Data Analysis</h3>
+            <span class="tag">Pandas</span>
+            <span class="tag">NumPy</span>
+            <span class="tag">Excel</span>
+            <span class="tag">Data Cleaning</span>
+        </div>
+
+        <div class="card">
+            <h3>Database</h3>
+            <span class="tag">SQL</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">DBMS</span>
+        </div>
+
+        <div class="card">
+            <h3>Visualization</h3>
+            <span class="tag">Matplotlib</span>
+            <span class="tag">Data Visualization</span>
+            <span class="tag">Power BI - Learning</span>
+        </div>
+
+        <div class="card">
+            <h3>Development Tools</h3>
+            <span class="tag">Jupyter Notebook</span>
+            <span class="tag">Kaggle</span>
+            <span class="tag">GitHub</span>
+            <span class="tag">Streamlit</span>
+        </div>
+
+        <div class="card">
+            <h3>Core Knowledge</h3>
+            <span class="tag">Statistics</span>
+            <span class="tag">Mathematics</span>
+            <span class="tag">Machine Learning - Learning</span>
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="heading">
+        <h2>My Projects</h2>
+        <p>Some of my academic and practical work.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Student Placement Analysis</h3>
+            <p>
+                An exploratory data analysis project using Python
+                and Pandas to investigate student placement trends,
+                technical skills, interview scores and salary patterns.
+            </p>
+            <span class="tag">Python</span>
+            <span class="tag">Pandas</span>
+            <span class="tag">Excel</span>
+        </div>
+
+        <div class="card">
+            <h3>Village Insights</h3>
+            <p>
+                A website concept designed to present useful
+                village-related information through digital
+                technologies and data-driven insights.
+            </p>
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Python</span>
+        </div>
+
+        <div class="card">
+            <h3>FindIt AI – Lost and Found Agent</h3>
+            <p>
+                An intelligent lost-and-found application
+                developed using Streamlit to help users
+                manage and discover lost items.
+            </p>
+            <span class="tag">Python</span>
+            <span class="tag">Streamlit</span>
+        </div>
+
+        <div class="card">
+            <h3>Data Visualization</h3>
+            <p>
+                Practising data exploration and visualization
+                using datasets to understand patterns,
+                comparisons and trends.
+            </p>
+            <span class="tag">Kaggle</span>
+            <span class="tag">Python</span>
+        </div>
+
+    </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+    <div class="heading">
+        <h2>Certifications & Experience</h2>
+        <p>My learning achievements and experiences.</p>
+    </div>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Oracle University</h3>
+            <p>Completed an Oracle University certification.</p>
+        </div>
+
+        <div class="card">
+            <h3>Prodigy Infotech</h3>
+            <p>Selected for a Data Science Internship opportunity.</p>
+        </div>
+
+        <div class="card">
+            <h3>Continuous Learning</h3>
+            <p>
+                Actively improving programming, analytical
+                and technical skills through online learning
+                and hands-on projects.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CAREER GOALS -->
+<section id="goals">
+    <div class="heading">
+        <h2>My Career Goals</h2>
+        <p>Where I see myself in the future.</p>
+    </div>
+
+    <div class="about-text">
+        <p>
+            My primary career interest is Data Analytics.
+            I aim to strengthen my knowledge of Python, SQL,
+            Excel and Power BI, gain practical industry experience,
+            work on real-world datasets and develop the ability
+            to transform raw data into meaningful insights.
+
+            I also look forward to exploring Machine Learning
+            and advanced Data Science concepts.
+        </p>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="heading">
+        <h2>Let's Connect!</h2>
+        <p>Feel free to connect with me professionally.</p>
+    </div>
+
+    <div class="contact">
+        <p>Interested in Data Science, Data Analytics,
+        collaborations and learning opportunities.</p>
+
+        <!-- Replace these links with your actual profiles -->
+
+        <a href="https://github.com/" target="_blank"
+           class="btn">GitHub</a>
+
+        <a href="https://www.linkedin.com/" target="_blank"
+           class="btn outline">LinkedIn</a>
+
+        <p>Email: Add your professional email here</p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Pallavi | Student Portfolio</p>
+    <p>Designed with passion for learning and technology.</p>
+</footer>
+
+</body>
+</html>
